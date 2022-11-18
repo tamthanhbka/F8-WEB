@@ -13,6 +13,10 @@ html{
 
 }
 
+.clear{
+    clear:both;
+}
+
 #header{
     height: 46px;
     background-color: rgba(151, 220, 236, 0.85);
@@ -98,7 +102,7 @@ html{
 #slider{
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/assets/img/slider/slider3.webp) top center / cover no-repeat;
+    background: url(/assets/img/slider/slider1.jpg) center center / cover no-repeat;
     position: relative;
 }
 
@@ -121,6 +125,54 @@ html{
 }
 
 #content{
+}
+
+#content .content-section{
+    margin: 0 18px;
+    padding: 64px 16px;
+}
+
+#content .content-section-header{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 5px 0;
+    letter-spacing: 4px;
+}
+
+#content .content-section-subheader{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.5;
+    margin: 15px 0;
+}
+
+#content .about-text{
+    text-align: justify;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+#content .story-slider{
+    padding: 32px 0;
+}
+
+#content .story-slider .slider{
+   float: left;
+   width: calc(100%/3);
+   text-align: center;
+}
+
+#content .story-slider .slider-text{
+    display: block;
+    font-size: 15px;
+    margin: 20px 0;
+}
+#content .story-slider img{
+   text-align: center;
+   height: 366px;
+   border-radius: 5px;
 }
 
 #footer{
