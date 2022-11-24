@@ -40,7 +40,7 @@
         <div id="slider">
             <div class="slider-content">
                 <h2 class="text-heading">Yang Yang</h2>
-                <p class="text-desciption">Em la niem kieu hanh cua anh</p>
+                <p class="text-desciption">Tranh Thien Ha</p>
             </div>
         </div>
 
@@ -54,16 +54,16 @@
                     Yang Yang ( simplified Chinese : ; traditional Chinese: , Latin : Yang Yang , born September 9 , 1991) is a Chinese actor . He is known to the audience for his role as Cao Shi in the TV series Tan Lac Than . In 2008, he was cast as Jia Bao Ngoc in the film Tan Hong Lau Mong (2010). In 2015, he impressed with many roles: Taekwondo brother Gu Ruo Bach with youthful enthusiasm ( A full-fledged young woman ), a cold-hearted Truong Khoi Linh wholeheartedly for you (Dao Tomb Pen Ky ), transformed into acold-hearted Vo Tinh with the common heart of the new teenager of the four great names , Hua Duc rebelled with a sad love story with Ba La and Ly Nhi ( Ta Nhi ). In 2016, Duong Duong played the role of Tieu Nai in Love you at first sight (2016). And most recently, Release Thien Ha as Hac Phong Tuc / Phong Lan Tuc (2022) . Currently, Duong Duong is considered as a promising young actor of Chinese and Asian cinema.
                 </p>
 
-                <div class="story-slider">
-                    <div class="slider">
+                <div class="row story-slider">
+                    <div class="col col-third text-center">
                         <p class="slider-text">Xiao Nai</p>
                         <img class="slider-img" src="/assets/img/story-img/img1.jpg" alt="">
                     </div>
-                    <div class="slider">
+                    <div class="col col-third text-center">
                         <p class="slider-text">Hac Phong Tuc</p>
                         <img class="slider-img" src="/assets/img/story-img/img2.jpg" alt="">
                     </div>
-                    <div class="slider">
+                    <div class="col col-third text-center">
                         <p class="slider-text">Vu Do</p>
                         <img class="slider-img" src="./assets/img/story-img/img3.jpg" alt="">
                     </div>
@@ -73,10 +73,51 @@
             <!-- end : Story - content -->
 
             <!-- begin : Movie - content -->
-            <div class="content-section">
-                <h2 class="content-section-header">The moive</h2>
-                <p class="content-section-subheader">I love moive</p>
-            
+            <div class="movie-section">
+                <div class="content-section">
+                    <h2 class="content-section-header text-while">The moive</h2>
+                    <p class="content-section-subheader text-while">I love moive</p>
+                    <br>
+                    <!-- Ticket -->
+                    <ul class="ticket-list">
+                        <li>September<span class="sold-out">Sold out</span></li>
+                        <li>October<span class="sold-out">Sold out</span></li>
+                        <li>November<span class="quantity">3</span></li>
+                    </ul>
+                    <!-- Drama -->
+                    <div class="row drama-list">
+                        <div class="col col-third">
+                            <img src="./assets/img/movie/movie1.jpg" alt="Tam sinh tam the" class="item-img">
+                            <div class="drama-content">
+                                <h4 class="drama-name">Tam Sinh Tam The</h4>
+                                <p class="drama-time">Fri 27 Nov 2016</p>
+                                <p class="drama-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-third">
+                            <img src="./assets/img/movie/movie2.jpg" alt="Tha Thi Thien Ha" class="item-img">
+                            <div class="drama-content">
+                                <h4 class="drama-name">Tha Thi Thien Ha</h4>
+                                <p class="drama-time">Fri 27 Nov 2016</p>
+                                <p class="drama-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-third">
+                            <img src="./assets/img/movie/movie3.jpg" alt="Em la niem kieu hanh cua anh" class="item-img">
+                            <div class="drama-content">
+                                <h4 class="drama-name">Em la niem kieu hanh cua anh</h4>
+                                <p class="drama-time">Fri 27 Nov 2016</p>
+                                <p class="drama-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
             </div>
             <!-- end : Movie - content -->
 
@@ -85,13 +126,121 @@
                 <h2 class="content-section-header">Contact</h2>
                 <p class="content-section-subheader">Fan? Drop a note!</p>
 
+                <div class="row contact-body">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" placeholder="Name" required class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" placeholder="Email" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" placeholder="Message" required class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND" class="btn pull-right mt-16">
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
             </div>
             <!-- end : Contact - content -->
+
+            <div class="map">
+                <img src="./assets/img/footer.jpg" alt="Tam sinh tam the" class="map-img">
+            </div>
+
+            <div class="content-section text-center">
+                <div class="footer-container">
+                    <div class="sosial">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                        <a href=""><i class="ti-pinterest"></i></a>
+                        <a href=""><i class="ti-twitter"></i></a>
+                        <a href=""><i class="ti-linkedin"></i></a>
+                    </div>
+                    <p class="footer-text">Powered by <a href="">w3.css</a></p>
+                </div>
+            </div>
+
         </div>
 
-        <div id="footer">
+        
+    </div>
+    <div class="model js-model">
+        <div class="model-container js-model-container">
+            <div class="model-close js-model-close">
+                <i class="ti-close"></i>
+            </div>
 
+            <div class="model-header">
+                <i class="header-icon ti-bag"></i>
+                Tickets
+            </div>
+
+            <div class="model-body">
+                <label for="ticket-quantity" class="model-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="ticket-quantity" type="text" class="model-input" placeholder="How many?">
+
+                <label for="ticket-enter" class="model-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input id="ticket-enter" type="email" class="model-input" placeholder="Enter email">
+
+                <button id="buy-ticket">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <div class="model-footer">
+                <p class="model-help">Need <a href="#">help?</a></p>
+            </div>
         </div>
     </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const model = document.querySelector('.js-model')
+        const modelclose = document.querySelector('.js-model-close')
+        const modelContainer = document.querySelector('.js-model-container')
+
+        function showBuyTickets(){
+            model.classList.add('open')
+        }
+
+        function hideBuyTickets(){
+            model.classList.remove('open')
+        }
+
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modelclose.addEventListener('click', hideBuyTickets)
+
+        model.addEventListener('click',hideBuyTickets)
+
+        modelContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
+
+
+    </script>
 </body>
 </html>

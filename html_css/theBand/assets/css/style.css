@@ -9,13 +9,73 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear{
+    clear:both;
+}
+
+.mt-8{
+    margin-top: 8px!important;
+}
+
+.mt-16{
+    margin-top: 16px!important;
+}
+
+.text-while{
+    color: #fff !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px ;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: calc(100%/3);
+}
+
+.btn{
+    display: inline-block;
+    color:#fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
 #main{
 
 }
 
-.clear{
-    clear:both;
-}
 
 #header{
     height: 46px;
@@ -128,8 +188,8 @@ html{
 }
 
 #content .content-section{
-    margin: 0 18px;
-    padding: 64px 16px;
+    margin: 0 15%;
+    padding: 72px 16px;
 }
 
 #content .content-section-header{
@@ -159,8 +219,6 @@ html{
 }
 
 #content .story-slider .slider{
-   float: left;
-   width: calc(100%/3);
    text-align: center;
 }
 
@@ -174,7 +232,245 @@ html{
    height: 366px;
    border-radius: 5px;
 }
+/* Moive section */
+.movie-section{
+    background-color: #000;
+}
 
-#footer{
+.ticket-list{
+    background-color: #fff;
+    list-style: none;
+}
 
+.ticket-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+
+}
+
+.ticket-list .quantity{
+    float: right;
+    color: #fff;
+    background-color: #000;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+/* Drama section*/
+.drama-list{
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+.item-img{
+    display: block;
+    width: 100%;
+}
+
+.item-img:hover{
+    opacity: 0.7;
+}
+
+.drama-content{
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.drama-name{
+
+}
+
+.drama-time{
+margin-top: 15px;
+color: #757575;
+}
+
+.drama-desc{
+margin-top: 15px;
+line-height: 1.4;
+}
+
+/* Contact section */
+
+#content .contact-body{
+    padding: 32px 0;
+}
+
+#content .contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#content .contact-info i {
+    width: 35px;
+    display: inline-block;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#content .contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map section */
+.map .map-img{
+    width: 100%;
+}
+
+/* Footer section */
+
+.sosial{
+    font-size: 28px;
+}
+
+.sosial a{
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+}
+
+.sosial a:hover{
+    opacity: 0.4;
+}
+
+.footer-text{
+    font-size: 15px;
+    margin: 25px 0;
+    opacity: 0.5;
+}
+
+.footer-text a{
+    color: #000;
+}
+
+/* Model section */
+
+.model.open{
+    display: flex;
+}
+
+.model{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: model-animation ease 0.55s;
+}
+
+.model .model-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+}
+
+.model .model-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    color: #fff;
+}
+
+.model .model-close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.model .model-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.model .header-icon{
+    margin-right: 12px;
+}
+
+.model .model-body{
+    padding: 16px;
+}
+
+.model .model-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.model .model-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.model #buy-ticket{
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+}
+
+.model #buy-ticket:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.model .model-footer{
+    padding: 16px;
+    text-align: right;
+    
+}
+
+.model .model-footer a{
+    color: #2196f3;
+    text-decoration: none;
+}
+
+@keyframes model-animation {
+    from{
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
