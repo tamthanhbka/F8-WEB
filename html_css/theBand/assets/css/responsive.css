@@ -1,0 +1,61 @@
+@media(min-width:1024px){
+    /* #header .menu-mobile-btn{
+        display: none;
+    } */
+}
+
+
+/* Mobie */
+@media (max-width: 740px){
+    /* #header{
+        height: 46px;
+        background-color: rgba(151, 220, 236, 0.85);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+    } */
+    #header{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #nav{
+        display: block;;
+    }
+
+    #nav li {
+        display: block;
+        position: relative;
+        /* cursor: pointer; */
+    }
+
+    #nav>li:first-child{
+        display: inline-block;
+    }
+
+    #header .search-btn{
+        display: none;
+    }  
+    
+    #header .menu-mobile-btn{
+        display: block;
+        float: right;
+        padding: 0 23px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    #header .menu-mobile-btn:hover{
+        background-color: rgba(6, 150, 183, 0.5);
+        cursor: pointer;
+    }
+    
+    #header .menu-icon{
+        line-height: 46px;
+    
+    }
+}

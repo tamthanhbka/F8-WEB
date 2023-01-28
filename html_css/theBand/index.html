@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YangYang</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" href="assets/img/icon/images.jfif" type="image/x-icon">
 </head>
 <body>
     <div id="main">
-        <div id="header">
+        <div id="header" class="js-header">
             <!-- begin : nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Story</a></li>
-                <li><a href="">Movie</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#movie">Movie</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="down-icon ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -33,6 +35,10 @@
             <!-- begin : header-search -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            
+            <div class="menu-mobile-btn js-mobile-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- end : header-search -->
         </div>
@@ -46,7 +52,7 @@
 
         <div id="content">
             <!-- begin : Story - content -->
-            <div class="content-section">
+            <div  id="story" class="content-section">
                 <h2 class="content-section-header">Story</h2>
                 <p class="content-section-subheader">Shanghai , China</p>
 
@@ -73,7 +79,7 @@
             <!-- end : Story - content -->
 
             <!-- begin : Movie - content -->
-            <div class="movie-section">
+            <div id="movie" class="movie-section">
                 <div class="content-section">
                     <h2 class="content-section-header text-while">The moive</h2>
                     <p class="content-section-subheader text-while">I love moive</p>
@@ -122,7 +128,7 @@
             <!-- end : Movie - content -->
 
             <!-- begin : Contact - content -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="content-section-header">Contact</h2>
                 <p class="content-section-subheader">Fan? Drop a note!</p>
 
@@ -174,9 +180,7 @@
                 </div>
             </div>
 
-        </div>
-
-        
+        </div>        
     </div>
     <div class="model js-model">
         <div class="model-container js-model-container">
@@ -218,6 +222,9 @@
         const model = document.querySelector('.js-model')
         const modelclose = document.querySelector('.js-model-close')
         const modelContainer = document.querySelector('.js-model-container')
+        const header = document.querySelector('.js-header')
+        const menuBtn = document.querySelector('.js-mobile-btn')
+        var headerHight = header.clientHeight
 
         function showBuyTickets(){
             model.classList.add('open')
@@ -238,9 +245,28 @@
         modelContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+        // Dong/Mo menumobile
+        menuBtn.addEventListener('click', function(){
+            if(header.clientHeight === headerHight){
+                header.style.height = 'auto'
+            }else{
+                header.style.height = null
+            }
+        })
 
+        //Tu dong dong mo menu mobile item
+        var menuItems = document.querySelectorAll('#nav li a')
+        for(i=0;i<menuItems.length;i++){
+            var menuItem = menuItems[i]
+        menuItem.addEventListener('click', function(event){
 
-
+            if(this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')){
+                event.preventDefault()
+            }else{
+                header.style.height = null
+            }
+        })
+    }
     </script>
 </body>
 </html>
